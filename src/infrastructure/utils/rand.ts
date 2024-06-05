@@ -14,3 +14,17 @@ export function getRandomString(length: number): IO<string> {
     return result;
   }
 }
+
+const numberAlphabet = '0123456789';
+const numberAlphabetLength = 10;
+
+export function getRandomNumberString(length: number): IO<string> {
+  return () => {
+    const buffer = crypto.randomBytes(length);
+    let result = '';
+    for (let i = 0; i < length; i++) {
+      result += numberAlphabet[buffer[i] % numberAlphabetLength];
+    }
+    return result;
+  }
+}

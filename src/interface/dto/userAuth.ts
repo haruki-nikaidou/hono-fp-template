@@ -23,8 +23,7 @@ export interface UserAuthRecord {
   userId: string;
 }
 
-export interface Session {
-  sessionToken: string;
+export interface SessionValue {
   userId: string;
   expiresAt: Date;
 }
