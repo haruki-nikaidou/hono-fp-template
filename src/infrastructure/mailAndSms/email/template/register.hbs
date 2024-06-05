@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Your verification code: {{code}}</title>
+</head>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    color: #333;
+    background-color: #ccc;
+  }
+  main {
+    margin: 3rem auto;
+    padding: 1rem;
+    max-width: 35rem;
+    background-color: #f3f3f3;
+    border-radius: .75rem;
+    box-shadow: 0 0 1rem rgba(0, 0, 0, 0.1);
+  }
+  .code {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #222;
+    width: fit-content;
+    margin: 2rem auto;
+    background-color: #a6e3ff;
+    padding: .5rem 1rem;
+    border-radius: .5rem;
+  }
+  .text-sm {
+    font-size: .875rem;
+    margin-bottom: 0.25rem;
+    margin-top: 0.25rem;
+  }
+  .text-xl {
+    font-size: 1.25rem;
+  }
+</style>
+<body>
+<main>
+  <h1 class="text-xl">
+    {{appName}}
+  </h1>
+  <p>Your verification code is:</p>
+  <p class="code">
+    <strong>{{code}}</strong>
+  </p>
+  <p>
+    This code will expire in 10 minutes and can only be used once.
+  </p>
+  <hr/>
+  <p class="text-sm">
+    You received this email because you registered on {{appName}}.
+  </p>
+  <p class="text-sm">
+    If you did not register, please ignore this email.
+    Someone else might have entered your email address by
+    mistake.
+  </p>
+</main>
+</body>
+</html>
