@@ -18,7 +18,7 @@ export interface PhoneAuthProviderRecord extends VerificationInfo {
 }
 
 export interface UserAuthRecord {
-  provider: string;
+  authProvider: string;
   authKey: string;
   userId: string;
 }
