@@ -12,4 +12,6 @@ const transporter = nodemailer.createTransport({
   },
 })
 
+export type TransporterType = typeof transporter;
+
 export const MailTransporter: IO<typeof transporter> = () => transporter;

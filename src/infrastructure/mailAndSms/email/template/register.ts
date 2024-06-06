@@ -5,8 +5,8 @@ const source = fs.readFileSync('./src/infrastructure/mailAndSms/email/template/r
 const template = Handlebars.compile(source);
 
 export function registerTemplate(
-  email: string,
+  appName: string,
   verifyCode: string
 ): string {
-  return template({email, verifyCode});
+  return template({appName, verifyCode});
 }
