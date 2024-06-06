@@ -1,8 +1,8 @@
 import {TaskOption, tryCatch} from 'fp-ts/TaskOption';
-import {db} from '../../infrastructure/repositories/db/pgConnection';
-import {emailProvider} from '../../infrastructure/repositories/db/models/auth/emailProvider';
+import {db} from '../pgConnection';
+import {emailProvider} from '../models/auth/emailProvider';
 import {and, eq} from 'drizzle-orm';
-import {EmailAuthProviderRecord} from '../../interface/dto/userAuth';
+import {EmailAuthProviderRecord} from '../../../../application/dto/userAuth';
 
 export function createEmailAuthRecord(
   email: string,

@@ -1,5 +1,5 @@
 import {DomainRedisKey, redisKeyFactory} from '../key';
-import {SessionValue} from '../../../../interface/dto/userAuth';
+import {SessionValue} from '../../../../application/dto/userAuth';
 import * as IO from 'fp-ts/IO';
 import {getRandomString} from '../../../utils/rand';
 import * as TO from 'fp-ts/TaskOption';
