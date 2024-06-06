@@ -1,4 +1,4 @@
-import {EnvConfig} from '../config';
+import {EnvConfig} from '../../config';
 import * as postgres from 'postgres';
 import {drizzle} from 'drizzle-orm/postgres-js';
 

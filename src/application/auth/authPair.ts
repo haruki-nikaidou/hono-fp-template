@@ -1,7 +1,7 @@
 import {none, TaskOption, tryCatch} from 'fp-ts/TaskOption';
 import {UserAuthRecord} from '../../interface/dto/userAuth';
-import {db} from '../../infrastructure/db/pgConnection';
-import {userAuthPair} from '../../infrastructure/db/models/auth/userAuthPair';
+import {db} from '../../infrastructure/repositories/db/pgConnection';
+import {userAuthPair} from '../../infrastructure/repositories/db/models/auth/userAuthPair';
 import {and, eq} from 'drizzle-orm';
 import validator from 'validator';
 
