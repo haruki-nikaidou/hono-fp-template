@@ -36,5 +36,7 @@
   },
   "lint-staged": {
     "*.js": "eslint --cache --fix"
-  }
+  },
+  "name": "hono-fp-template",
+  "version": ""
 }
